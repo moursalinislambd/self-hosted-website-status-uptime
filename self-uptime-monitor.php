@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name:       Self Hosted Uptime Monitor
- * Plugin URI:        https://github.com/moursalinislambd/
+ * Plugin URI:        https://github.com/moursalinislambd/self-hosted-website-status-uptime
  * Description:       This Is Fully Self hosted. Just Install it and Check Wp-admin Dashboard
  * Version:           1.0
  * Author:            Moursalin Islam
@@ -697,4 +697,5 @@ register_deactivation_hook(__FILE__, function() {
     if ($timestamp) {
         wp_unschedule_event($timestamp, 'self_uptime_check');
     }
+
 });
